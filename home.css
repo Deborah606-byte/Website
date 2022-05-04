@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins";
+    box-sizing: border-box;
+    width: 100%; 
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../IMAGES/v11.jpg'); 
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    position: relative; 
+}
+
+/*for navigation links*/
+.nav-bar{
+    list-style: none;
+}
+.nav-bar li{
+    display: inline-block;
+}
+.navbar li a{
+    color: #0000ff;
+    text-decoration: none;
+    font-family: "Poppins";
+    font-size: medium;
+} 
+
+/*for dropdown menu*/
+.dropdown{
+    display: none;
+} 
+.nav-bar li:hover .dropdown{
+    display: block;
+    position: absolute;
+    background: #38afcd;
+}
+.nav-bar li:hover .dropdown li{
+    display: block;
+    margin: 10px;
+}
+.nav-bar li:hover .dropdown li{
+    width: 240px;
+    padding: 10px;
+    border-bottom: 1px solid #000000;
+    border-radius: 0;
+    text-align: left;
+}
+.nav-bar li:hover .dropdown li:last-child{
+    border-bottom: none;
+}
+.nav-bar li:hover .dropdown li a:hover{
+    color: #000000;
+} 
+
+/*for body content*/
+.introduction{
+    font-weight: 600;
+    text-align: center;
+    margin-top: 30px;
+}
+.information h1{
+    color: #000000;
+    margin-bottom: 0;
+}
+h3{
+    color: #ff4500;
+    text-align: center;
+}
+.introduction p::first-letter{
+    font-size: x-large;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+} 
+.MIS{
+    margin-bottom: 50px;
+}
+.MIS .picture1{
+    width: 500px;
+    height: 300px;
+    float: left;
+    margin-left: 50px;
+}
+.picture1:hover{
+    -ms-transform: scale(1.5); 
+   -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+}
+.MIS .mission{
+    float: right;
+    margin-right: 100px;
+    margin: 0 100px;
+}
+.MIS .mistext{
+    color: orangered;
+    margin-bottom: 20px;
+}
+.mission p::first-letter{
+    font-size: x-large;
+}
+.VS{
+    margin-bottom: 50px;
+}
+.VS .vision{
+    float: left;
+    margin-left: 50px;
+}
+.VS .vstext{
+    color: orangered;
+    margin-bottom: 20px;
+}
+.vision p::first-letter{
+    font-size: x-large;
+}
+.VS .picture2{
+    width: 500px;
+    height: 300px;
+    float: right;
+    margin: 0 200px;
+}
+.picture2:hover{
+    -ms-transform: scale(1.5); 
+   -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+}
+.VA .picture3{
+    width: 500px;
+    height: 300px;
+    float: left;
+    margin-left: 50px;
+}
+.picture3:hover{
+    -ms-transform: scale(1.5); 
+   -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+}
+.VA .values{
+    float: right;
+    margin-right: 100px;
+    margin: 0 100px;
+}
+.VA .vatext{
+    color: orangered;
+    margin-bottom: 20px;
+}
+.values p::first-letter{
+    font-size: x-large;
+}  
+/*used to float the body contents from right to left*/
+/* z */
+.bottom{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.promise h2{
+    color: #ff4500;
+    margin-bottom: 0;
+}
+
+/*for table*/
+.prices-content{
+    width: 100%;
+}
+.prices-content h2{
+    color: #ff4500;
+    text-align: center;
+    font-weight: 600;
+}
+.prices{
+    border-collapse: collapse;
+    font-size: 15px;
+    min-width: 400px;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    width: 100%;
+}
+.prices thead tr{
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+}
+.prices tbody tr{
+    text-align: center;
+}
+.prices th,
+.prices td{
+    padding: 12px 15px;
+}
+.prices tbody tr{
+    border-bottom: 1px solid #000000;
+}
+.prices tbody tr:nth-of-type(even){
+    background-color: #adff2f;
+}
+.prices tbody tr:last-of-type{
+    border-bottom: 1px solid #000000;
+}
+
+/*for footer*/
+.container1{
+    max-width: 100%;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+    margin-top: 10px;
+}
+.end{
+    background-color: #ff4500;
+    padding: 15px;
+}
+.end-col{
+    width: 25%;
+    padding: 12px 0;
+}
+.end-col h4{
+    font-size: 17px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-weight: 500;
+    position: relative;
+}
+.end-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: #adff2f;
+    height: 2px;
+    box-sizing: border-box;
+    width: 40px;
+} 
+.end-col ul li:not(:last-child){
+    margin-bottom: 5px;
+}
+.end-col ul li a{
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.2s ease;
+}
+.end-col ul li a:hover{
+    color: #adff2f;
+    padding: 5px;
+}
+.end-col .socialmedia a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.2s ease;
+}
+.end-col .socialmedia a:hover{
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/*responsiveness*/
+@media(max-width: 574px){
+    /*for smartphones*/
+    .content{
+        width: 100%;
+    }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .VS .vision{
+        margin-bottom: 200px;;
+    }
+    .VA .values{
+        margin-bottom: 100px;
+    }
+    .introduction{
+        margin-bottom: 140px;
+    }
+    .MIS .picture1{
+        width: 350px;
+    }
+    .VS .picture2{
+        width: 350px;
+    }
+    .VA .picture3{
+        width: 350px;
+    }
+    .end-col{
+        width: 100%;
+        margin-left: 20px;
+    }
+}
+
+@media(min-width: 1030px){
+    /*for desktop*/
+    .container{
+        width: 100%;
+    }
+    .introduction{
+        margin-bottom: 60px;
+    }
+    .MIS .picture1{
+        width: 500px;
+    }
+    .VS .picture2{
+        width: 500px;
+    }
+    .VA .picture3{
+        width: 500px;
+    }
+
+}
